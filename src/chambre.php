@@ -89,7 +89,7 @@
                       <p class="card-text">'.$descriptions.' </p>
                       <p class="card-text text-success"> PRIX DE LA CHAMBRE : '.$prixx.' FCFA</p>
                       
-                      <button class="kkiapay-button btn btn-primary">Reserver
+                      <button class="btn btn-primary">Reserver
                       
                       </button>
                     </div>
