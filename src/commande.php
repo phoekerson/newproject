@@ -1,7 +1,3 @@
-<?php
-      include 'connect.php';
-      include_once('paiements/privateKeys.php');
-?>
 <!doctype html>
 <!-- Page d'accueil du restaurant-->
 <html lang="fr">
@@ -12,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     
 
     <title>Restaurant La belle assiette </title>
@@ -38,7 +33,6 @@
         </li>
         <li class="nav-item pe-4">
           <a class="nav-link active" href="#ancre1">Contact</a>
-          
         </li>
          <li class="nav-item pe-4">
           <a class="btn btn-order" href="commande.php" rounded-0>Commander maintenant</a>
@@ -65,6 +59,7 @@
       <!-- creation d'une section pour la liste des repas à commander-->
       <?php
  include 'connect.php';
+ include 'paiements/privateKeys.php'
  ?>
 
     
@@ -105,15 +100,13 @@
                       src="https://cdn.kkiapay.me/k.js">
                       </script>
                       </button>
+                     
                     </div>
                   </div>
             </li>
             </ul>
-            </div>
             ';
-            
         }
-        
       }
     
 
@@ -152,7 +145,8 @@
 
     
   
- <!-- ajout de mon css pour ecraser les proprietes bootstrap-->
-<link  rel="stylesheet" href="commande.css" type="text/css">
-<script src="https://cdn.kkiapay.me/k.js"></script>
-</body>
+      <!-- ajout de mon css pour ecraser les proprietes bootstrap-->
+      <link  rel="stylesheet" href="commande.css" type="text/css">
+      
+    </body>
+</html>

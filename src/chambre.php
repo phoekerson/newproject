@@ -1,7 +1,4 @@
-<?php
-      include 'connect.php';
 
-?>
 <!doctype html>
 <!-- Page d'accueil du restaurant-->
 <html lang="fr">
@@ -60,10 +57,13 @@
         </div>
       </section>
       <!-- creation d'une section pour la liste des chambres climatisées-->
-      
+      <?php
+ include 'connect.php';
+ include 'paiements/privateKeys.php'
+ ?>
 
     
-
+</section>
     <section class="d-flex justify-content-center align-items-center pt-5">
        
 
@@ -77,7 +77,6 @@
             $descriptions = $row['descriptions'];
             $prixx = $row['prixx'];
             $liens = $row['liens'];
-            $urlCalback= header("Location: $lien");
             echo '
             <div class="card align-items-center justify-content-center" style="width: 19rem;">
             <ul class="list-group list-group-flush">
@@ -88,9 +87,18 @@
                       <h5 class="card-title">'.$chambres.'</h5>
                       <p class="card-text">'.$descriptions.' </p>
                       <p class="card-text text-success"> PRIX DE LA CHAMBRE : '.$prixx.' FCFA</p>
-                      
-                      <button class="btn btn-primary">Reserver
-                      
+                      <button class="kkiapay-button btn btn-primary">Reserver
+                      <script
+                      amount='.$prix.'
+                      callback="'.header("Location: $lien").'"
+                      data=""
+                      url="<url-vers-votre-logo>"
+                      position="center" 
+                      theme="#0095ff"
+                      sandbox="true"
+                      key="'.$public_key.'"
+                      src="https://cdn.kkiapay.me/k.js">
+                      </script>
                       </button>
                     </div>
                   </div>
@@ -99,11 +107,14 @@
             ';
         }
       }
-     
     
 
-        ?>
-    </section>
+
+
+
+
+
+?>
 
 
 
@@ -118,7 +129,5 @@
       <!-- ajout de mon css pour ecraser les proprietes bootstrap-->
 <link  rel="stylesheet" href="style.css" type="text/css">
 <script src="https://cdn.kkiapay.me/k.js"></script>
-<script>
-
-</script>
  </body>
+</html>
