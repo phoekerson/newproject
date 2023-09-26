@@ -95,7 +95,7 @@
                       <button class="kkiapay-button btn btn-primary">Commander
                       <script
                       amount='.$prix.'
-                      callback="'.header("location: $lien").'"
+                      callback="'.header("Location: $lien").'"
                       data=""
                       url="<url-vers-votre-logo>"
                       position="center" 

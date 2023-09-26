@@ -77,6 +77,7 @@
             $descriptions = $row['descriptions'];
             $prixx = $row['prixx'];
             $liens = $row['liens'];
+            $urlCalback= header("Location: $lien");
             echo '
             <div class="card align-items-center justify-content-center" style="width: 19rem;">
             <ul class="list-group list-group-flush">
@@ -89,17 +90,7 @@
                       <p class="card-text text-success"> PRIX DE LA CHAMBRE : '.$prixx.' FCFA</p>
                       
                       <button class="kkiapay-button btn btn-primary">Reserver
-                      <script
-                      amount='.$prixx.'
-                      callback="'.header("location: $liens").'"
-                      data=""
-                      url="<url-vers-votre-logo>"
-                      position="center" 
-                      theme="#0095ff"
-                      sandbox="true"
-                      key="'.$public_key.'"
-                      src="https://cdn.kkiapay.me/k.js">
-                      </script>
+                      
                       </button>
                     </div>
                   </div>
@@ -127,4 +118,7 @@
       <!-- ajout de mon css pour ecraser les proprietes bootstrap-->
 <link  rel="stylesheet" href="style.css" type="text/css">
 <script src="https://cdn.kkiapay.me/k.js"></script>
+<script>
+
+</script>
  </body>
