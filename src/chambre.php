@@ -1,6 +1,6 @@
 <?php
       include 'connect.php';
-      include_once('privateKeys.php');
+      include_once('paiements/privateKeys.php');
 ?>
 <!doctype html>
 <!-- Page d'accueil du restaurant-->
@@ -90,8 +90,8 @@
                       
                       <button class="kkiapay-button btn btn-primary">Reserver
                       <script
-                      amount='.$prix.'
-                      callback="'.header("location: $lien").'"
+                      amount='.$prixx.'
+                      callback="'.header("location: $liens").'"
                       data=""
                       url="<url-vers-votre-logo>"
                       position="center" 
