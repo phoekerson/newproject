@@ -1,6 +1,6 @@
 <?php
       include 'connect.php';
-      include_once('paiements/privateKeys.php');
+
 ?>
 <!doctype html>
 <!-- Page d'accueil du restaurant-->
