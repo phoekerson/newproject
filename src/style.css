@@ -1,0 +1,94 @@
+.caleb-navbar{
+	background-color: rgba(0, 0, 0, 0.55);
+	box-shadow: 1px 1px 3px, rgba(255 , 255 , 255 , 0.54) ;
+	z-index: 99;
+}
+.caleb-navbar .nav-link{
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom 0.4s ease-in-out, border-color 0,3s ease;
+
+}
+.caleb-navbar .nav-link:hover{
+	padding-bottom: 20px;
+	border-bottom-color: var(--bs-teal);
+
+}
+.banniere,           
+.order-form{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/poulet.jpg') center center fixed 
+	no-repeat;
+	height: 800px;
+	background-size: cover;
+}
+.banniere1{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/verre_de_bierre.jpg') center center fixed 
+	no-repeat;
+	height: 800px;
+	background-size: cover;
+
+}
+.banniere2{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/hotel1.jpg') center center fixed 
+	no-repeat;
+	height: 800px;
+	background-size: cover;
+
+}
+
+.banniere3{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/hotel2.jpg') center center fixed 
+	no-repeat;
+	height: 800px;
+	background-size: cover;
+
+}
+
+.order-form{
+	height: 400px;
+}
+.caleb-menu{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/cuisine.jpg') center center fixed 
+	no-repeat;
+	height: 1000px;
+	background-size: cover;
+
+}
+
+
+
+
+
+
+
+.banniere-desc{
+	font-size: 48px;
+	font-weight: 400;
+    color: #fff;
+}
+
+.btn-order{
+	color: var(--bs-teal);
+	border-color: var(--bs-teal);
+	 transition: 0,5s;
+}
+.btn-order:hover,
+.btn-order:active{
+	color: #fff;
+	background-color:var(--bs-teal); 
+}
+a.btn{
+	border-color: var(--bs-teal);  ;
+}
+a.btn:hover,
+a.btn.active{
+	background-color: var(--bs-teal); 
+	color: #fff;
+}
+textarea{
+	resize: none;
+}
+.btn.caleb-btn{
+   background-color:  #0d6efd;
+   color: #fff;
+   margin-left: -40px;
+}

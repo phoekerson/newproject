@@ -1,0 +1,7 @@
+<?php
+
+$public_key = "23dfea9b6635062359803a219559c247221f017c";
+$private_key = "pk_ba8bb8dff8577aed82efdf310634c0fa631123469f1ba4ce8e9552f5dc520504";
+$secret = "sk_470109b1005dbe70e5c0b94bbbd6f4e3707c03f22a9ac45bc8e552ea7024da17";
+
+?>

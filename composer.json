@@ -1,0 +1,17 @@
+{
+    "name": "root/restaurant",
+    "autoload": {
+        "psr-4": {
+            "Root\\Restaurant\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NizoAT",
+            "email": "98343015+NizoAT@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "kkiapay/kkiapay-php": "dev-master"
+    }
+}
