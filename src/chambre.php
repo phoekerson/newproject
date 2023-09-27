@@ -90,7 +90,7 @@
                       <button class="kkiapay-button btn btn-primary">Reserver
                       <script
                       amount='.$prix.'
-                      callback="'.header("Location: $lien").'"
+                      callback="http://localhost:8080/"'.$lien.'"
                       data=""
                       url="<url-vers-votre-logo>"
                       position="center" 

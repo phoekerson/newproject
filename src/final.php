@@ -13,7 +13,9 @@ if(isset($_POST['submit'])){
   $result = mysqli_query($con,$sql);
   if($result){
       echo "";
+      header("Locations: index.php");
   }else{
+    header("HTTP/1.1 404 Not Found");
       die(mysqli_error($con));
   }
 }
