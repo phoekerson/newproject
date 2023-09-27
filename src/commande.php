@@ -147,6 +147,6 @@
   
       <!-- ajout de mon css pour ecraser les proprietes bootstrap-->
       <link  rel="stylesheet" href="commande.css" type="text/css">
-      
+      <script src="https://cdn.kkiapay.me/k.js"></script>
     </body>
 </html>
